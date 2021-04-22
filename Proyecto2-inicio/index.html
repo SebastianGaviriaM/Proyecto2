@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>GIPHOS</title>
+</head>
+<body>
+    <div id="openGif">
+        <div class="contClose"><img src="/assets/close.svg" alt="CloseGif" class="closeGif" id="closeGifSelect"></div>
+        <img src="" alt="gifSelect" class="imgGifSelect" id="imgGifSelected">
+        <div id="contInfo">
+            <div class="contTitulos">
+                <h4>User</h4>
+                <h3 id="TitGifSelect">Titulo Gifos</h3>
+            </div>
+            <div class="contLogGif">
+                <img src="/assets/icon-fav.svg" alt="" class="likebtn" id="likebtn">
+                <img src="/assets/icon-download.svg" alt="" class="imgDown">
+            </div>
+        </div>
+    </div>
+    
+    <div class="lineas" id="lineaSup"></div>
+    <nav class="nav" id="nav">   
+        <a href="index.html" class="cont-logo contLogoDesk"><img src="assets/logo-desktop.svg" alt="Logo GYPHOS" id="logoDesk">  </a>
+        <a href="index.html" class="cont-logo contLogo" ><img src="assets/logo-mobile.svg" alt="Logo GYPHOS" id="logo">  </a>
+        <input type="checkbox" id="chk-nav-bar">
+        
+        <ul id="nav-list" class="navList"> 
+            <li class="nav-list-item" id="darkBoton-ctn">
+                <h3 id="darkBoton">Modo nocturno</h3>
+                <div class="raya"></div>
+            </li>
+            <li class="nav-list-item" id="lightBoton-ctn">
+                <h3 id="lightBoton">Modo diurno</h3>
+                <div class="raya"></div>
+            </li>
+            <li class="nav-list-item">
+                <a href="favoritos.html">Favoritos</a>
+                <div class="raya"></div>
+            </li>
+            <li class="nav-list-item">
+                <a href="misGifos.html">Mis GIFOS</a>
+                <div class="raya"></div>
+            </li> 
+            <li class="nav-list-item"> 
+                <a href="/crearGifo.html" class="contCrearGifo"><img src="/assets/button-crear-gifo.svg" alt="BtonCrearGifo" id="BtonCrearGifo"></a>
+            </li>          
+        </ul>        
+        <img src="/assets/burger.svg" alt="open-burger" id="open-burger">
+        <img src="/assets/close.svg" alt="close-burger" id="close-burger">
+    </nav>
+    
+    <main id="mainCont">
+        <h1 id="h1" class="displayBlock">Inspírate, busca, guarda y crea los mejores <span>GIFOS</span></h1>
+
+        <div id="cont-bus">
+            <img src="/assets/ilustra_header.svg" alt="ilustra_header" id="ilustra-header" class="displayBlock">
+
+            <div id="bar-bus">
+                <div id="bus-bar">
+                    <input type="text" placeholder="Busca GIFOS y más" id="srchBar">
+                    <img src="/assets/icon-search.svg" alt="icono_busqueda" id="iconoBus" class="displayBlock">
+                    <img src="/assets/close.svg" alt="icomo_close" id="closeBus" class="displayNone">
+                </div>
+                <div class="displayNone" id="contSug">
+                    <ul class="listaSugerencias">
+                        <li class="sugerencia">  <img src="/assets/icon-search.svg" alt="srch"> <p class="txtSug">Sugerencia</p> </li>
+                        <li class="sugerencia"><img src="/assets/icon-search.svg" alt="srch"> <p class="txtSug">Sugerencia</p></li>
+                        <li class="sugerencia"><img src="/assets/icon-search.svg" alt="srch"> <p class="txtSug">Sugerencia</p></li>
+                        <li class="sugerencia"><img src="/assets/icon-search.svg" alt="srch"> <p class="txtSug">Sugerencia</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="tren-bus" class="tren-bus">
+            <h2>Trending:</h2>
+
+            <p id="trenWords"></p>
+        </div>
+        <div id="contGifBus" class="contGifBusNone">
+            <div class="rayita"></div>
+            <h2 id="tituloBusq"></h2>
+            <div id="contGifs"></div>
+            <button class="verMas displayNone" id='verMas'>Ver más</button>
+        </div>
+    </main>
+
+
+
+    <section id="contTrend" class="contTrendlight">
+        <h2>Trending GIFOS</h2>
+        <div id="contPrf">
+            <p>Mira los últimos </p>
+            <p class="ult">GIFOS de nuestra comunidad.</p>
+        </div>
+        <div id="trenContent"></div>
+
+        <div id="ternContentDesk">
+            <img src="/assets/button-slider-left.svg" alt="leftSlider" id="leftSlider" class="sliders">
+            <div id="contTrenDesk">
+                <div class='contGifTrend'>
+                    <img src="" alt="gif1" id="gif1" class="gifTrendDesk">
+                    <div class="displayNone">
+                        <div class="imgCont"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                        <div class="titCont"> <h4>User</h4> <h3 id="tit1"></h3></div>
+                    </div>
+                </div>
+
+                <div class='contGifTrend'>
+                    <img src="" alt="gif2" id="gif2" class="gifTrendDesk">
+                    <div class="displayNone">
+                        <div class="imgCont"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                        <div class="titCont"> <h4>User</h4> <h3 id="tit2"></h3></div>
+                    </div>
+                </div>
+                <div class='contGifTrend'>
+                    <img src="" alt="gif3" id="gif3" class="gifTrendDesk">
+                    <div class="displayNone">
+                        <div class="imgCont"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+                        <div class="titCont"> <h4>User</h4> <h3 id="tit3"></h3></div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="/assets/Button-Slider-right.svg" alt="rightSlider" id="rightSlider" class="sliders">
+        </div>
+    </section>
+    <footer class="footerLight" id="footer"> 
+        <div class="auxFo">  
+            <p>Compartir en:</p>
+            <div id="cont-social">
+                <a href="https://www.facebook.com/GIPHY" ><img src="./assets/icon_facebook.svg" alt="" class="social"></a>
+                <a href="https://twitter.com/GIPHY" ><img src="./assets/icon-twitter.svg" alt="" class="social"></a>
+                <a href="https://www.instagram.com/giphy/" ><img src="./assets/icon_instagram.svg" alt="" class="social"></a>
+            </div>
+        </div> 
+        <h3>© GIFOS 2020 All Rights Reserved.</h3>
+    </footer>
+    <div class="lineas" id="lineaInf"></div>
+    <script src="/apps/trendGifs.js"></script>
+    <script src="/apps/trendWords.js"></script>
+    <script src="/apps/busqueda.js"></script>
+    <script src="/apps/app.js"></script>
+</body>
+</html>
