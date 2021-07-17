@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/estilo.css" type="text/css">
+		<link rel="icon" type="image/ico" href="imagenes/favicon.ico">
+		
+		<title>Mis Gifos</title>
+		
+	</head>
+	
+	<body id="body" class="body diurno">
+		
+		<!-- CABECERA -->
+		
+		<div class="linea_color"></div>
+		
+		<header class="header" id="header">
+			
+			<div class="cabecera">
+				
+				<div class="logo" id="logo"></div>
+				<div class="menu_hamburguesa" id="menu_hamburguesa"></div>
+				
+			</div>
+			
+			<nav>
+				
+				<ul class="menu" id="menu">
+					<li><a id="modo" href="#"><span id="nombreModo">Modo Nocturno</span></a></li>
+					<li><a href="favoritos.html">Favoritos</a></li>
+					<li><a href="gifos.html" class="active">Mis GIFOS</a></li>
+					<li><a href="crear.html"><div class="crear" id="crear"></div></a></li>
+				</ul>
+				
+			</nav>
+			
+		</header>
+		
+		<!-- CONTENIDO -->
+		
+		<div class="contenido">
+			
+			<!-- GIFOS -->
+			
+			<div class="gifos" id="gifos">
+				
+				<div class="icono_gifos"></div>
+				<p class="texto_gifos">Mis GIFOS</p>		   
+				
+			</div>
+			
+			<div class="contenedor_sin_gifos" id="contenedor_sin_gifos">
+				
+				<div class="sin_gifos"></div>
+				<p class="texto_sin_gifos">"¡Anímate a crear tu primer GIFO!"</p>	
+				
+			</div>
+			
+			<!-- MIS GIFOS -->
+			
+			<div class="mis_gifos" id="mis_gifos"></div> 
+			
+			<!-- VER MAS -->
+			
+			<div class="boton_ver_mas" id="boton_ver_mas"></div> 
+			
+			<!-- MODAL -->
+			
+			<div class="modal" id="modal">
+				
+				<div class="cerrar_modal" id="cerrar_modal"></div>
+				
+				<div class="boton_ampliar_izquierda" id="boton_ampliar_izquierda"></div>
+				<div class="imagen_ampliada" id="imagen_ampliada"></div>
+				<div class="boton_ampliar_derecha" id="boton_ampliar_derecha"></div>		
+				
+				<div class="usuario_modal" id="usuario_modal"></div>
+				<div class="titulo_modal" id="titulo_modal"></div>
+				<div class="descarga_modal" id="descarga_modal"></div>
+				<div class="corazon_modal" id="corazon_modal"></div>
+				
+			</div> 
+			
+			
+			<!-- TRENDING GIFOS -->
+			
+			<div class="trending_gifos" id="trending_gifos">
+				
+				<p class="trending_gifos_texto">Trending GIFOS</p>
+				<p class="mira">Mira los últimos GIFOS de nuestra comunidad.</p>
+				
+				<div class="contenedor_gifos">
+					
+					<div class="boton_slider_izquierda" id="boton_slider_izquierda"></div>
+					<div class="resultado_trending"></div>
+					<div class="boton_slider_derecha" id="boton_slider_derecha"></div>
+					
+				</div>					
+				
+				
+			</div>
+			
+			<!-- PIE -->
+			
+			<footer class="pie" id="pie">	
+				
+				<p class="compartir">Compartir en:</p>
+				
+				<div class="redes_sociales">
+					
+					<div class="icono_facebook" id="icono_facebook"></div>
+					<div class="icono_twitter" id="icono_twitter"></div>
+					<div class="icono_instagram" id="icono_instagram"></div>
+					
+				</div>
+				
+				<p class="derechos">© GIFOS 2020 All Rights Reserved.</p>
+				
+			</footer>
+			
+			<div class="linea_color"></div>
+			
+		</div>
+		
+		<script src="js/index.js"></script>
+		<script src="js/favoritos.js"></script>
+		<script src="js/trending.js"></script>
+		<script src="js/mis_gifs.js"></script>
+		
+	</body>
+	
+</html>
